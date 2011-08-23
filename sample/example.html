@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+	<head>
+		<script type="text/javascript" src="../src/lib/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="../src/o_o.js"></script>
+	</head>
+	<body>
+		<textarea id="test">asdfasdfas</textarea>
+		<script type="text/javascript">
+			var oeditor = new o_o({
+				target:'#test',
+				width:400,
+				height:200,
+				base:'../src',
+				
+			})
+		</script>
+		<input type="button" value="test" onclick="execCommand('insertText', null, 'foobar');">
+	</body>
+</html>
